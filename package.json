@@ -1,21 +1,28 @@
 {
   "name": "twist-lib",
-  "version": "0.1.0",
-  
+  "version": "0.0.1",
+  "description": "Components for Adobe Twist",
+  "main": "index.jsx",
+  "keywords": [
+    "react",
+    "twist",
+    "component library"
+  ],
   "author": "Sandeep Gupta <sandy.pec@gmail.com>",
   "license": "Apache-2.0",
-  
   "homepage": "https://github.com/sangupta/twist-lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sangupta/twist-lib.git"
+  },
   "bugs": {
     "url": "https://github.com/sangupta/twist-lib/issues"
   },
-  
   "scripts": {
     "build": "webpack --color --display-error-details",
     "build-production": "NODE_ENV=production npm run build",
     "watch": "webpack-dev-server --hot --watch-content-base"
   },
-  
   "babel": {
     "presets": [
       "env",
@@ -25,7 +32,6 @@
       "stage-2"
     ]
   },
-  
   "devDependencies": {
     "@twist/core": "^0.1.2",
     "@twist/react": "^0.1.5",
@@ -43,14 +49,12 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.4.1"
   },
-  
   "dependencies": {
     "babel-plugin-transform-react-display-name": "^6.25.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-stack-grid": "^0.7.1"
+    "react-dom": "^16.2.0"
   }
 }
