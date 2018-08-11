@@ -6,13 +6,13 @@
 @Component
 export default class Badge {
 
-  @Attribute variant;
+  @Attribute variant:string = '';
   
-  @Attribute isPill = false;
+  @Attribute pill:boolean = false;
   
   render() {
     let classes = 'badge ';
-    if(this.isPill) {
+    if(this.pill) {
       classes = classes + 'badge-pill ';
     }
     
