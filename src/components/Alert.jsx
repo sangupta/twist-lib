@@ -6,7 +6,7 @@
 @Component
 export default class Alert {
 
-  @Attribute variant;
+  @Attribute variant:string = '';
   
   render() {
     return <div class={ 'alert alert-' + this.variant}>
