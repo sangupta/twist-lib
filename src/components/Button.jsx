@@ -52,5 +52,6 @@ export default class Button {
     return <button type='button' class={ classes } { disabledString }>
       { this.children }
     </button>;
+  }
 
 }
