@@ -1,0 +1,50 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "rootDir": "src",
+
+        // resolve all imports from the src directory if not absolute imports
+        "baseUrl": "src",
+        // "noImplicitAny": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "strictNullChecks": false,
+        "jsx":"react",
+        "allowSyntheticDefaultImports": true,
+
+        // compile to ES5 - chrome 49 was the first one to get it
+        // so we are good with CEP 7 even
+        "target": "es5",
+        // "downlevelIteration": true,
+        // "importHelpers": false,
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "es2015",
+            "es2016",
+            "es2017",
+            "esnext"
+          ],
+        "forceConsistentCasingInFileNames": true,
+        // "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        // "noUnusedLocals": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.js",
+        "src/**/*.jsx"
+    ],
+    "exclude": [
+        "__test__/**/*",
+        "assets/**/*",
+        "build-scripts/**/*",
+        "dist/**/*",
+        "node_modules/**/*",
+        "test/**/*",
+        "node_modules"
+    ]
+}
