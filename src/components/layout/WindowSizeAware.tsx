@@ -1,3 +1,6 @@
+import { Component, BaseComponent, Attribute, Bind } from '@twist/react';
+import React from 'react';
+
 /**
  * This component tracks the window size and set the scope
  * variable named 'scope.twistLibPageMode' to one of phone, 

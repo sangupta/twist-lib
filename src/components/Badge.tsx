@@ -1,3 +1,6 @@
+import { Component, BaseComponent, Attribute, Bind } from '@twist/react';
+import React from 'react';
+
 /**
  * Simple badge component based on BS
  *

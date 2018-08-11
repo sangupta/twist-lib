@@ -1,3 +1,6 @@
+import { Component, BaseComponent, Attribute, Bind } from '@twist/react';
+import React from 'react';
+
 /**
  * Simple alert component based on BS
  *

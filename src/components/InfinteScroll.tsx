@@ -1,3 +1,6 @@
+import { Component, BaseComponent, Attribute, Bind } from '@twist/react';
+import React from 'react';
+
 @Component({ events: [ "fetch" ] })
 export default class InfinteScroll {
 
@@ -17,6 +20,11 @@ export default class InfinteScroll {
      * to indicate that all pages have been added.
      */
     @Attribute stopDetection:boolean = false;
+
+    /**
+     * The reference HTML element for the container
+     */
+    htmlElement = null;
 
     componentDidMount() {
         this.htmlElement.addEventListener('scroll', this.handleScroll);
