@@ -5,7 +5,7 @@ import React from 'react';
 export default class MobileMode {
     
     render() {
-        <if condition={ this.scope.twistLibPageMode == 'mobile' }>
+        return <if condition={ this.scope.twistLibPageMode == 'mobile' }>
             { this.children }
         </if>
     }

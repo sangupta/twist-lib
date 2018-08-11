@@ -1,8 +1,11 @@
+import { Component, BaseComponent, Attribute, Bind } from '@twist/react';
+import React from 'react';
+
 @Component
 export default class DesktopMode {
     
     render() {
-        <if condition={ this.scope.twistLibPageMode == 'desktop' }>
+        return <if condition={ this.scope.twistLibPageMode == 'desktop' }>
             { this.children }
         </if>
     }

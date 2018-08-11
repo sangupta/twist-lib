@@ -5,7 +5,7 @@ import React from 'react';
 export default class PhoneMode {
     
     render() {
-        <if condition={ this.scope.twistLibPageMode == 'phone' }>
+        return <if condition={ this.scope.twistLibPageMode == 'phone' }>
             { this.children }
         </if>
     }
