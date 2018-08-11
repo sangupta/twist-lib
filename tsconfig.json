@@ -3,6 +3,7 @@
         "experimentalDecorators": true,
         "allowJs": true,
         "rootDir": "src",
+        "outDir": "dist",
 
         // resolve all imports from the src directory if not absolute imports
         "baseUrl": "src",
