@@ -2,7 +2,7 @@
   "name": "twist-lib",
   "version": "0.0.1",
   "description": "Components for Adobe Twist",
-  "main": "index.jsx",
+  "main": "index.ts",
   "keywords": [
     "react",
     "twist",
