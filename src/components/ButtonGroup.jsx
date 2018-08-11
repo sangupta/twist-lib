@@ -9,9 +9,16 @@ export default class ButtonGroup {
   @Attribute ariaLabel:string = '';
   
   @Attribute size:string = '';
+
+  @Attribute vertical:boolean = false;
   
   render() {
-    return <div class={ 'btn-group btn-group-' + this.size } role='group' aria-label={ this.ariaLabel }>
+    let classes:string = 'btn-group btn-group-' + this.size;
+    if(this.vertical) {
+      classes = classes + ' btn-group-vertical';
+    }
+    
+    return <div class={ classes } role='group' aria-label={ this.ariaLabel }>
       { this.children }
     </div>;
   }
