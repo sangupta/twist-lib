@@ -2,7 +2,7 @@ import { Component, BaseComponent, Attribute, Bind } from '@twist/react';
 import React from 'react';
 
 @Component({ events: [ "fetch" ] })
-export default class InfinteScroll {
+export default class InfinteScroll extends BaseComponent {
 
     /**
      * The scrolling threshold to use for detecting fetch region

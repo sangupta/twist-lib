@@ -10,7 +10,7 @@ import React from 'react';
  * @author sangupta
  */
 @Component
-export default class WindowSizeAware {
+export default class WindowSizeAware extends BaseComponent {
 
     componentDidMount() {
         window.addEventListener('resize', this.handleResize);

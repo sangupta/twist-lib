@@ -7,7 +7,7 @@ import React from 'react';
  * Ref: http://getbootstrap.com/docs/4.1/components/button-group/
  */
 @Component
-export default class ButtonGroup {
+export default class ButtonGroup extends BaseComponent {
 
   @Attribute ariaLabel:string = '';
   

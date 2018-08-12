@@ -7,7 +7,7 @@ import React from 'react';
  * Ref: http://getbootstrap.com/docs/4.1/components/buttons/
  */
 @Component
-export default class LinkButton {
+export default class LinkButton extends BaseComponent {
 
   @Attribute variant:string = '';
   

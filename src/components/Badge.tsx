@@ -7,7 +7,7 @@ import React from 'react';
  * Ref: http://getbootstrap.com/docs/4.1/components/badge/
  */
 @Component
-export default class Badge {
+export default class Badge extends BaseComponent {
 
   @Attribute variant:string = '';
   

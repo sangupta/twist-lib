@@ -7,7 +7,7 @@ import React from 'react';
  * Ref: http://getbootstrap.com/docs/4.1/components/jumbotron/
  */
 @Component
-export default class Jumbotron {
+export default class Jumbotron extends BaseComponent {
 
     @Attribute fluid:boolean = false;
 

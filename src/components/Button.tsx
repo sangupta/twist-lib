@@ -7,7 +7,7 @@ import React from 'react';
  * Ref: http://getbootstrap.com/docs/4.1/components/buttons/
  */
 @Component
-export default class Button {
+export default class Button extends BaseComponent {
 
   @Attribute variant:string = '';
   
@@ -52,7 +52,7 @@ export default class Button {
       disabledString = 'disabled';
     }
     
-    return <button type='button' class={ classes } { disabledString }>
+    return <button type='button' class={ classes } { ...disabledString }>
       { this.children }
     </button>;
   }

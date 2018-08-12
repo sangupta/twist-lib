@@ -7,7 +7,7 @@ import React from 'react';
  * Ref: http://getbootstrap.com/docs/4.1/components/alerts/
  */
 @Component
-export default class Alert {
+export default class Alert extends BaseComponent {
 
   @Attribute variant:string = '';
   

@@ -7,7 +7,7 @@ import React from 'react';
  * Ref: http://getbootstrap.com/docs/4.1/components/button-group/
  */
 @Component
-export default class ButtonToolbar {
+export default class ButtonToolbar extends BaseComponent {
 
   @Attribute ariaLabel;
 
