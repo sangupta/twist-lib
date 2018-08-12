@@ -1,14 +1,18 @@
 declare namespace JSX {
   interface IntrinsicElements {
     if: { condition: boolean },
-    repeat: { collection: Array<T>, as: T },
+    repeat: { collection: Array<any>, as: any },
   }
 }
 
 declare module '@twist/react' {
-  class BaseComponent {
+  export class BaseComponent {
     scope:any;
     children:any;
+    trigger:Function;
   }
-
+  
+  export function Component(componentClass);
+  export function Attribute(property, arg2);
+  export function Bind(method, arg2);
 }
