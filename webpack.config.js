@@ -9,19 +9,24 @@ module.exports = {
   
   mode: 'production',
   
-  entry: [ __dirname + '/src/index.ts' ],
+  entry: {
+    app: [ __dirname + '/src/index.ts' ],
+
+    // extract all dependencies into a vendor file
+    vendor: ['react', 'react-dom', '@twist/core', '@twist/react', 'babel-runtime/core-js', 'babel-runtime/regenerator']
+  },
 
   watchOptions: {
     // aggregateTimeout: 1000, // wait for a second before firing a new build
-    ignored: /node_modules/
+    ignored: /(node_modules|bower_components)/
   },
 
   module: {
     rules: [
       {
         test: /\.es6\.(js|jsx|ts|tsx)$/,
-        exclude: /node_modules/,
-        loader: ['babel-loader']
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
       }
     ]
   },
@@ -52,9 +57,7 @@ module.exports = {
   devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
 
   plugins: [
-
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),}),
+    new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),}),
     new webpack.ProvidePlugin({"React": "react",}),
     new ReactTwistPlugin(),
   ]

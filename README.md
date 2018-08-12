@@ -7,11 +7,20 @@ conjunction with Adobe Twist framework.
 
  * WindowSizeAware - helps with responsive page contruction
  * InfinteScroll - for the infinite scroll
+ * Bootstrap components
 
 ## Dependencies
 
 * React 16+
 * Adobe Twist
+
+## Hacking
+
+There are 2 branches in the project:
+
+* `master`: this includes the latest codebase
+* `typescript`: this has errors in typescript compilation as was unable to add
+new attributes to HTML tags that are supported via Adobe Twist.
 
 ## Versioning
 
