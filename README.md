@@ -19,9 +19,40 @@ conjunction with Adobe Twist framework.
 There are 2 branches in the project:
 
 * `master`: this includes the latest codebase
-* `typescript`: this has errors in typescript compilation as was unable to add
-new attributes to HTML tags that are supported via Adobe Twist.
+* `typescript`: this has errors in typescript compilation. See below for
+more details.
 
+### Webpack
+
+Building via `webpack` is done:
+
+```
+$ npm run build
+```
+
+### Rollup
+
+`rollup` compilation currently only builds `index.ts` file and generates
+just the pure imports. A single bundle build via `rollup` could not be generated
+due to lack of experience with the tool. 
+
+Packaging via `rollup` was tried using:
+
+```
+$ rollup src/index.ts --format iife --name "twistlib" --file bundle.js
+```
+
+### Typescript
+
+The source code contains type declarations to open project in Visual Studio
+Code, however, the `typescript` compiler fails with errors as we cannot add
+default intrinsic JSX properties.
+
+`typescript` compiler can be fired using:
+
+```
+$ tsc
+```
 ## Versioning
 
 For transparency and insight into our release cycle, and for striving 
