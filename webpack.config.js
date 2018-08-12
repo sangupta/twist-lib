@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
 const ReactTwistPlugin = require('@twist/react-webpack-plugin');
-const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   
@@ -54,7 +53,7 @@ module.exports = {
     filename: '[name].js'
   },
   
-  devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
+  // devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
 
   plugins: [
     new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),}),
