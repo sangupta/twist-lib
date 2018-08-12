@@ -55,7 +55,7 @@ export default class LinkButton extends BaseComponent {
       classes = classes + ' disabled';
     }
     
-    return <a type='button' class={ classes } href={ this.href } tabIndex={ this.tabIndex } role='button'>
+    return <a class={ classes } href={ this.href } tabindex={ this.tabIndex } role='button'>
       { this.children }
     </a>;
   }

@@ -10,11 +10,15 @@ export default class ProgressBar extends BaseComponent {
 
     @Attribute variant:string = '';
 
+    @Attribute min:number = 0;
+
+    @Attribute max:number = 100;
+    
     render() {
         return <div class='progress'>
             <div class= { 'progress-bar bg-' + this.variant } style={ 'width: ' + this.percent + '%' }  
                  role='progressbar' aria-valuenow={ this.percent } 
-                 aria-valuemin='0' aria-valuemax='100'>
+                 aria-valuemin={ this.min } aria-valuemax={ this.max }>
                 { this.label }
             </div>
         </div>;
