@@ -53,6 +53,15 @@ default intrinsic JSX properties.
 ```
 $ tsc
 ```
+
+### ParcelJS
+
+Hopefully we will be able to compile using ParcelJS one day via:
+
+```
+$ parcel src/index.ts
+```
+
 ## Versioning
 
 For transparency and insight into our release cycle, and for striving 
