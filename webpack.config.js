@@ -24,9 +24,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.es6\.(js|jsx|ts|tsx)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
+        loader: 'babel-loader'
       }
     ]
   },
