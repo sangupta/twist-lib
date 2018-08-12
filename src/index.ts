@@ -1,11 +1,11 @@
-import InfinteScroll from './components/InfinteScroll';
+import InfinteScroll from 'components/InfinteScroll';
 
-import WindowSizeAware from './components/layout/WindowSizeAware';
-import DesktopMode from './components/layout/DesktopMode';
-import LaptopMode from './components/layout/LaptopMode';
-import PhoneMode from './components/layout/PhoneMode';
-import TabletMode from './components/layout/TabletMode';
-import MobileMode from './components/layout/MobileMode';
+import WindowSizeAware from 'components/layout/WindowSizeAware';
+import DesktopMode from 'components/layout/DesktopMode';
+import LaptopMode from 'components/layout/LaptopMode';
+import PhoneMode from 'components/layout/PhoneMode';
+import TabletMode from 'components/layout/TabletMode';
+import MobileMode from 'components/layout/MobileMode';
 
 import Alert from 'components/Alert';
 import Badge from 'components/Badge';
