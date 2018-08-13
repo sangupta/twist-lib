@@ -9,6 +9,28 @@ conjunction with Adobe Twist framework.
  * InfinteScroll - for the infinite scroll
  * Bootstrap components
 
+## Usage
+
+To use this library:
+
+```
+$ yarn install --dev twist-lib
+
+# yarn is preferred but works with npm as well
+$ npm install --save-dev twist-lib
+```
+
+To use the Bootstrap based components, include the CSS file in your
+HTML source code yourself. This is done to reduce the size of the JS
+bundle that changes often.
+
+The current Bootstrap 4.1 documentation mentions to use the following
+include for the CSS:
+
+```
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+```
+
 ## Dependencies
 
 * React 16+
