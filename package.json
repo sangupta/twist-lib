@@ -21,7 +21,7 @@
   "scripts": {
     "build": "webpack --mode production --color --display-error-details",
     "build-production": "NODE_ENV=production npm run build",
-    "watch": "webpack-dev-server --config webpack-site.config.js --hot --watch-content-base"
+    "watch": "webpack-dev-server --mode development --config webpack-site.config.js --hot --watch-content-base"
   },
   "babel": {
     "presets": [

@@ -14,7 +14,7 @@ module.exports = {
   
   context: __dirname,
   
-  mode: 'production',
+  mode: 'development',
   
   entry: {
     // the reason we use JSX for the App site is because we don't
