@@ -26,3 +26,8 @@ footer {
 .sidebar .nav-link:hover {
     text-decoration: underline;
 }
+
+.doc-container pre {
+    padding: 20px;
+    background-color: beige;
+}

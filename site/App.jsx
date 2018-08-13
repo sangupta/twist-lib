@@ -2,9 +2,33 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Alert from 'components/Alert';
+import AlertDocs from './pages/AlertDocs';
 
 @Component
 class App {
+
+    myChildren = {};
+
+    @Observable
+    activeComponent = null;
+
+    componentWillMount() {
+        this.myChildren['Alert'] = <AlertDocs />;
+    }
+
+    addAllChildComponents() {
+        let result = [];
+
+        let keys = Object.keys(this.myChildren);
+        for(let index = 0; index < keys.length; index++) {
+            let componentName = keys[index];
+            let componentItem = this.myChildren[componentName];
+            
+            result.push(<li class='nav-item'><a class="nav-link" href='#' onClick={ () => this.activeComponent = componentItem } >{ componentName }</a></li>);
+        }
+
+        return result;
+    }
 
     render() {
         return <g>
@@ -26,19 +50,11 @@ class App {
                 <div class='row flex-xl-nowrap'>
                     <div class='col-12 col-md-3 col-xl-2 sidebar'>
                         <ul class='nav flex-column'>
-                            <li class='nav-item'><a class="nav-link" href='#'>Alert</a></li>
-                            <li class='nav-item'><a class="nav-link" href='#'>Badge</a></li>
-                            <li class='nav-item'><a class="nav-link" href='#'>Breadcrumbs</a></li>
-                            <li class='nav-item'><a class="nav-link" href='#'>Button</a></li>
-                            <li class='nav-item'><a class="nav-link" href='#'>Button Group</a></li>
-                            <li class='nav-item'><a class="nav-link" href='#'>Button Toolbar</a></li>
-                            <li class='nav-item'><a class="nav-link" href='#'>Infinite Scroll</a></li>
-                            <li class='nav-item'><a class="nav-link" href='#'>Jumbotron</a></li>
-                            <li class='nav-item'><a class="nav-link" href='#'>Link Button</a></li>
-                            <li class='nav-item'><a class="nav-link" href='#'>Progress Bar</a></li>
+                            { this.addAllChildComponents() }
                         </ul>
                     </div>
                     <div class='col doc-container'>
+                        { this.activeComponent ? this.activeComponent : '' }
                     </div>
                 </div>
             </main>
