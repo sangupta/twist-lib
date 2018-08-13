@@ -9,7 +9,7 @@ import React from 'react';
 @Component
 export default class Alert extends BaseComponent {
 
-  @Attribute variant:string = '';
+  @Attribute variant:string = 'primary';
   
   render() {
     return <div class={ 'alert alert-' + this.variant}>

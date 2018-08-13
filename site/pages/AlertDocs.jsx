@@ -14,11 +14,16 @@ import Alert from 'twist-lib/components/Alert';
 export default class Example {
 
     render() {
-        <Alert variant="primary">This is an alert</Alert>
+        <Alert>This is the default alert.</Alert>
+        <Alert variant="primary">This is the primary alert.</Alert>
     }
 
 }` }</pre>
-            <Alert variant="primary">This is an alert</Alert>
+
+            <div class='runtime'>
+                <Alert>This is the default alert.</Alert>
+                <Alert variant="primary">This is the primary alert.</Alert>
+            </div>
         </g>;
     }
 
