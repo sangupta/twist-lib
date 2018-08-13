@@ -16,3 +16,4 @@ class App {
 
 // mount the application compoonent to document body
 ReactDOM.render( <App />, document.body );
+module.hot.accept();
