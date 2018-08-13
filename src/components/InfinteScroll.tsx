@@ -10,11 +10,6 @@ export default class InfinteScroll extends BaseComponent {
     @Attribute scrollThreshold = 250;
 
     /**
-     * Class names to be added to the container
-     */
-    @Attribute classes = '';
-
-    /**
      * Stop detection of scrolling events as there may not be anymore
      * items available on server to add to container. Set this to true
      * to indicate that all pages have been added.
@@ -59,7 +54,7 @@ export default class InfinteScroll extends BaseComponent {
     }
 
     render() {
-        return <div class={ this.classes } ref={ this.htmlElement }>
+        return <div ref={ this.htmlElement } { ...this.undeclaredAttributes() }>
             { this.children }
         </div>;
     }   

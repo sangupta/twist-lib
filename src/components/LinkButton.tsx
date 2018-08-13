@@ -40,22 +40,9 @@ export default class LinkButton extends BaseComponent {
       classes = classes + ' btn-' + this.size;
     }
     
-    // take care of block level button
-    if(this.block) {
-      classes = classes + ' btn-block';
-    }
-    
-    // take care of active state
-    if(this.active) {
-      classes = classes + ' active';
-    }
-    
-    // take care of disabled state
-    if(this.disabled) {
-      classes = classes + ' disabled';
-    }
-    
-    return <a class={ classes } href={ this.href } tabindex={ this.tabIndex } role='button'>
+    return <a class={ classes } class-btn-block={ this.block } 
+              class-disabled={ this.disabled } class-active={ this.active } 
+              href={ this.href } tabindex={ this.tabIndex } role='button'>
       { this.children }
     </a>;
   }

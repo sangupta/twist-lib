@@ -14,14 +14,7 @@ export default class Badge extends BaseComponent {
   @Attribute pill:boolean = false;
   
   render() {
-    let classes = 'badge ';
-    if(this.pill) {
-      classes = classes + 'badge-pill ';
-    }
-    
-    classes = classes + 'badge-' + this.variant;
-    
-    return <span class={ classes }>
+    return <span class={ 'badge badge-' + this.variant } class-badge-pill={ this.pill }>
       { this.children }
     </span>;
   }

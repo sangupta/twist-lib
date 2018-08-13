@@ -16,12 +16,7 @@ export default class ButtonGroup extends BaseComponent {
   @Attribute vertical:boolean = false;
   
   render() {
-    let classes:string = 'btn-group btn-group-' + this.size;
-    if(this.vertical) {
-      classes = classes + ' btn-group-vertical';
-    }
-    
-    return <div class={ classes } role='group' aria-label={ this.ariaLabel }>
+    return <div class={ 'btn-group btn-group-' + this.size } class-btn-group-vertical={ this.vertical } role='group' aria-label={ this.ariaLabel }>
       { this.children }
     </div>;
   }
