@@ -15,6 +15,7 @@ declare module '@twist/react' {
     scope:any;
     children:any;
     trigger:Function;
+    undeclaredAttributes:Function;
   }
   
   export function Component(componentClass);
