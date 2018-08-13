@@ -21,6 +21,8 @@ export default class Button extends BaseComponent {
 
   @Attribute disabled:boolean = false;
 
+  @Attribute type:string = 'button';
+
   render() {
     let classes = 'btn ';
     
@@ -52,7 +54,7 @@ export default class Button extends BaseComponent {
       disabledString = 'disabled';
     }
     
-    return <button type='button' class={ classes } { ...disabledString }>
+    return <button type={ this.type } class={ classes } { ...disabledString }>
       { this.children }
     </button>;
   }
