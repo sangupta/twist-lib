@@ -1,3 +1,8 @@
+/**
+ * These declarations should ideally come from Adobe
+ * React-Twist library.
+ */
+
 declare namespace JSX {
   interface IntrinsicElements {
     if: { condition: boolean },

@@ -1,3 +1,8 @@
+/**
+ * Declarations in this file should be merged in twist-react.d.ts
+ * Infact, they should ideally come from the react-twist library.
+ */
+
 declare namespace JSX {
     interface IntrinsicElements {
         div: { class?:string, role?:string, style?:string, ref?:any },
