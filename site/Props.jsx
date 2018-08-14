@@ -1,9 +1,17 @@
 @Component
 export class Props {
 
+    @Attribute label:string = '';
+
     render() {
         return <div class='props-container'>
-            <h3>Available Properties</h3>
+            <if condition={ this.label }>
+                <h3>Available Properties for { this.label }</h3>   
+            </if>
+            <else>
+                <h3>Available Properties</h3>
+            </else>
+
             <table class='table table-striped table-bordered table-hover'>
                 <thead>
                     <tr>

@@ -10,6 +10,7 @@ import InfiniteScrollDocs from './pages/InfiniteScrollDocs';
 import JumbotronDocs from './pages/JumbotronDocs';
 import LinkButtonDocs from './pages/LinkButtonDocs';
 import ProgressBarDocs from './pages/ProgressBarDocs';
+import BreadcrumbDocs from './pages/BreadcrumbDocs';
 
 @Component
 class App {
@@ -22,6 +23,7 @@ class App {
     componentWillMount() {
         this.myChildren['Alert'] = <AlertDocs />;
         this.myChildren['Badge'] = <BadgeDocs />;
+        this.myChildren['Breadcrumb'] = <BreadcrumbDocs />;
         this.myChildren['Button'] = <ButtonDocs />;
         this.myChildren['Button Group'] = <ButtonGroupDocs />;
         this.myChildren['Button Toolbar'] = <ButtonToolbarDocs />;
