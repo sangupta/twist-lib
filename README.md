@@ -3,6 +3,17 @@
 A collection of components and utility classes to be used in
 conjunction with Adobe Twist framework.
 
+* [Available Components](#available-components)
+* [Usage](#usage)
+* [Dependencies](#dependencies)
+* [Hacking](#hacking)
+  * [Webpack](#webpack)
+  * [Rollup](#rollup)
+  * [Typescript](#typescript)
+  * [ParcelJS](#parceljs)
+* [Versioning](#versioning)
+* [License](#license)
+
 ## Available Components
 
  * WindowSizeAware - helps with responsive page contruction
