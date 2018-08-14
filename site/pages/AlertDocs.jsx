@@ -1,4 +1,5 @@
 import Alert from 'components/Alert';
+import { Props, Prop } from '../Props';
 
 @Component
 export default class AlertDocs {
@@ -7,7 +8,15 @@ export default class AlertDocs {
         return <g>
             <h3>Alert</h3>
 
-            <pre>{ `import React from 'react';
+            Generate basic alerts.
+
+            <div class='example'>
+                <div class='result'>
+                    <Alert>This is the default alert.</Alert>
+                    <Alert variant="primary">This is the primary alert.</Alert>
+                </div>
+                <pre>
+{ `import React from 'react';
 import Alert from 'twist-lib/components/Alert';
 
 @Component
@@ -18,12 +27,13 @@ export default class Example {
         <Alert variant="primary">This is the primary alert.</Alert>
     }
 
-}` }</pre>
-
-            <div class='runtime'>
-                <Alert>This is the default alert.</Alert>
-                <Alert variant="primary">This is the primary alert.</Alert>
+}` }
+                </pre>
             </div>
+
+            <Props>
+                <Prop name="variant" type="enum" values="primary, secondary, danger" initial="primary" required="false" />
+            </Props>
         </g>;
     }
 

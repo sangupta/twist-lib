@@ -31,3 +31,16 @@ footer {
     padding: 20px;
     background-color: beige;
 }
+
+.example {
+    border: 1px solid black;
+}
+.example pre {
+    margin-bottom: 0;
+}
+.example .result {
+    margin: 20px;
+}
+.props-container {
+    margin-top: 50px;
+}
