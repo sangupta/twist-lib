@@ -1,8 +1,10 @@
+import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
+import React from 'react';
 import Nav from 'components/Nav';
 
 @Component
-export default class NavListDocs {
+export default class NavListDocs extends BaseComponent {
 
     render() {
         return <g>

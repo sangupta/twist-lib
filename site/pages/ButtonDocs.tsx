@@ -1,8 +1,10 @@
 import Button from 'components/Button';
+import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
+import React from 'react';
 
 @Component
-export default class ButtonDocs {
+export default class ButtonDocs extends BaseComponent {
 
     render() {
         return <g>

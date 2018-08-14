@@ -1,8 +1,10 @@
 import Badge from 'components/Badge';
+import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
+import React from 'react';
 
 @Component
-export default class BadgeDocs {
+export default class BadgeDocs extends BaseComponent {
 
     render() {
         return <g>

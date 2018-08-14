@@ -1,7 +1,9 @@
+import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
+import React from 'react';
 
 @Component
-export default class LinkButtonDocs {
+export default class LinkButtonDocs extends BaseComponent {
 
     render() {
         return <g>

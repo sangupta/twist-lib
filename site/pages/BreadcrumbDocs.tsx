@@ -1,7 +1,9 @@
+import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
+import React from 'react';
 
 @Component
-export default class BreadcrumbDocs {
+export default class BreadcrumbDocs extends BaseComponent {
 
     render() {
         return <g>

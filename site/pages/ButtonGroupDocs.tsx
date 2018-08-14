@@ -1,8 +1,10 @@
 import ButtonGroup from 'components/ButtonGroup';
+import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
+import React from 'react';
 
 @Component
-export default class ButtonGroupDocs {
+export default class ButtonGroupDocs extends BaseComponent {
 
     render() {
         return <g>

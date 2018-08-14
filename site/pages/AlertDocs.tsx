@@ -1,8 +1,10 @@
 import Alert from 'components/Alert';
+import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
+import React from 'react';
 
 @Component
-export default class AlertDocs {
+export default class AlertDocs extends BaseComponent {
 
     render() {
         return <g>
