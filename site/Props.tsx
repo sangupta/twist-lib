@@ -1,5 +1,8 @@
+import { Component, BaseComponent, Attribute } from "@twist/react";
+import React from 'react';
+
 @Component
-export class Props {
+export class Props extends BaseComponent {
 
     @Attribute label:string = '';
 
@@ -32,7 +35,7 @@ export class Props {
 }
 
 @Component
-export class Prop {
+export class Prop extends BaseComponent {
 
     @Attribute name:string = '';
 
