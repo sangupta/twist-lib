@@ -19,7 +19,7 @@ module.exports = {
   entry: {
     // the reason we use JSX for the App site is because we don't
     // want to get into the complications of typescript errors
-    twistlibsite: [ __dirname + '/site/DocSiteMain.jsx' ],
+    twistlibsite: [ __dirname + '/site/DocSiteMain.tsx' ],
 
     // extract all dependencies into a vendor file
     vendor: ['react', 'react-dom', '@twist/core', '@twist/react', 

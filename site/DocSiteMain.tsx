@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Component, BaseComponent } from "@twist/react";
+import { Observable} from "@twist/core";
 
 import AlertDocs from './pages/AlertDocs';
 import BadgeDocs from './pages/BadgeDocs';
@@ -16,8 +18,10 @@ import NavDocs from './pages/NavDocs';
 import NavListDocs from './pages/NavListDocs';
 import PaginationDocs from './pages/PaginationDocs';
 
+const Aux = props => props.children;
+
 @Component
-class App {
+export default class DocSiteMain extends BaseComponent {
 
     myChildren = {};
 
@@ -56,7 +60,7 @@ class App {
     }
 
     render() {
-        return <g>
+        return <Aux>
             <header class='mb-auto'>
                 <nav class="navbar navbar-expand-md fixed-top">
                     <div class="container-fluid">
@@ -90,11 +94,11 @@ class App {
                     </div>
                 </div>
             </footer>
-        </g>;
+        </Aux>;
     }
 
 }
 
 // mount the application compoonent to document body
-ReactDOM.render( <App />, document.body );
+ReactDOM.render( <DocSiteMain />, document.body );
 module.hot.accept();
