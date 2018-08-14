@@ -1,4 +1,4 @@
-import { Component, BaseComponent } from "@twist/react";
+import { Component, BaseComponent, Attribute } from "@twist/react";
 
 @Component
 export class Breadcrumb extends BaseComponent {
