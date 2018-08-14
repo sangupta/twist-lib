@@ -13,6 +13,7 @@ import ProgressBarDocs from './pages/ProgressBarDocs';
 import BreadcrumbDocs from './pages/BreadcrumbDocs';
 import ListGroupDocs from './pages/ListGroupDocs';
 import NavDocs from './pages/NavDocs';
+import NavListDocs from './pages/NavListDocs';
 
 @Component
 class App {
@@ -34,6 +35,7 @@ class App {
         this.myChildren['Link Button'] = <LinkButtonDocs />;
         this.myChildren['List Group'] = <ListGroupDocs />;
         this.myChildren['Nav'] = <NavDocs />;
+        this.myChildren['Nav List'] = <NavListDocs />;
         this.myChildren['Progress Bar'] = <ProgressBarDocs />;
     }
 
