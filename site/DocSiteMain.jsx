@@ -6,6 +6,10 @@ import BadgeDocs from './pages/BadgeDocs';
 import ButtonDocs from './pages/ButtonDocs';
 import ButtonGroupDocs from './pages/ButtonGroupDocs';
 import ButtonToolbarDocs from './pages/ButtonToolbarDocs';
+import InfiniteScrollDocs from './pages/InfiniteScrollDocs';
+import JumbotronDocs from './pages/JumbotronDocs';
+import LinkButtonDocs from './pages/LinkButtonDocs';
+import ProgressBarDocs from './pages/ProgressBarDocs';
 
 @Component
 class App {
@@ -21,6 +25,10 @@ class App {
         this.myChildren['Button'] = <ButtonDocs />;
         this.myChildren['Button Group'] = <ButtonGroupDocs />;
         this.myChildren['Button Toolbar'] = <ButtonToolbarDocs />;
+        this.myChildren['Infinite Scroll'] = <InfiniteScrollDocs />;
+        this.myChildren['Jumbotron'] = <JumbotronDocs />;
+        this.myChildren['Link Button'] = <LinkButtonDocs />;
+        this.myChildren['Progress Bar'] = <ProgressBarDocs />;
     }
 
     addAllChildComponents() {
