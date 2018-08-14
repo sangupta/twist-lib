@@ -11,6 +11,7 @@ import JumbotronDocs from './pages/JumbotronDocs';
 import LinkButtonDocs from './pages/LinkButtonDocs';
 import ProgressBarDocs from './pages/ProgressBarDocs';
 import BreadcrumbDocs from './pages/BreadcrumbDocs';
+import ListGroupDocs from './pages/ListGroupDocs';
 
 @Component
 class App {
@@ -30,6 +31,7 @@ class App {
         this.myChildren['Infinite Scroll'] = <InfiniteScrollDocs />;
         this.myChildren['Jumbotron'] = <JumbotronDocs />;
         this.myChildren['Link Button'] = <LinkButtonDocs />;
+        this.myChildren['List Group'] = <ListGroupDocs />;
         this.myChildren['Progress Bar'] = <ProgressBarDocs />;
     }
 
