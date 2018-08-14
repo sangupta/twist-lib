@@ -4,11 +4,29 @@ import React from 'react';
 @Component
 export class Props extends BaseComponent {
 
-    @Attribute label:string = '';
+    @Attribute label:string = null;
+
+    isNotEmpty(s:string):boolean {
+        if(!s) {
+            return false;
+        }
+
+        if(s === null) {
+            return false;
+        }
+
+        if(s === '') {
+            return false;
+        }
+
+        return true;
+    }
 
     render() {
+        console.log(this.label);
+
         return <div class='props-container'>
-            <if condition={ this.label }>
+            <if condition={ this.isNotEmpty(this.label) }>
                 <h3>Available Properties for { this.label }</h3>   
             </if>
             <else>
