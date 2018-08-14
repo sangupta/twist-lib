@@ -17,6 +17,7 @@ import ListGroupDocs from './pages/ListGroupDocs';
 import NavDocs from './pages/NavDocs';
 import NavListDocs from './pages/NavListDocs';
 import PaginationDocs from './pages/PaginationDocs';
+import ImageDocs from './pages/ImageDocs';
 
 const Aux = props => props.children;
 
@@ -35,6 +36,7 @@ export default class DocSiteMain extends BaseComponent {
         this.myChildren['Button'] = <ButtonDocs />;
         this.myChildren['Button Group'] = <ButtonGroupDocs />;
         this.myChildren['Button Toolbar'] = <ButtonToolbarDocs />;
+        this.myChildren['Image'] = <ImageDocs />;
         this.myChildren['Infinite Scroll'] = <InfiniteScrollDocs />;
         this.myChildren['Jumbotron'] = <JumbotronDocs />;
         this.myChildren['Link Button'] = <LinkButtonDocs />;
