@@ -9,6 +9,7 @@ import BadgeDocs from './pages/BadgeDocs';
 import ButtonDocs from './pages/ButtonDocs';
 import ButtonGroupDocs from './pages/ButtonGroupDocs';
 import ButtonToolbarDocs from './pages/ButtonToolbarDocs';
+import CardDocs from './pages/CardDocs';
 import InfiniteScrollDocs from './pages/InfiniteScrollDocs';
 import JumbotronDocs from './pages/JumbotronDocs';
 import LinkButtonDocs from './pages/LinkButtonDocs';
@@ -36,6 +37,7 @@ export default class DocSiteMain extends BaseComponent {
         this.myChildren['Button'] = <ButtonDocs />;
         this.myChildren['Button Group'] = <ButtonGroupDocs />;
         this.myChildren['Button Toolbar'] = <ButtonToolbarDocs />;
+        this.myChildren['Card'] = <CardDocs />;
         this.myChildren['Image'] = <ImageDocs />;
         this.myChildren['Infinite Scroll'] = <InfiniteScrollDocs />;
         this.myChildren['Jumbotron'] = <JumbotronDocs />;
