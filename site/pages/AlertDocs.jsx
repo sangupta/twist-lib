@@ -23,8 +23,10 @@ import Alert from 'twist-lib/components/Alert';
 export default class Example {
 
     render() {
-        <Alert>This is the default alert.</Alert>
-        <Alert variant="primary">This is the primary alert.</Alert>
+        return <g>
+            <Alert>This is the default alert.</Alert>
+            <Alert variant="primary">This is the primary alert.</Alert>
+        </g>;
     }
 
 }` }
@@ -32,7 +34,7 @@ export default class Example {
             </div>
 
             <Props>
-                <Prop name="variant" type="enum" values="primary, secondary, danger" initial="primary" required="false" />
+                <Prop name="variant" type="enum" values="primary, secondary, success, danger, warning, info" initial="primary" required="false" />
             </Props>
         </g>;
     }

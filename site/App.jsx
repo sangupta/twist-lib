@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Alert from 'components/Alert';
 import AlertDocs from './pages/AlertDocs';
+import BadgeDocs from './pages/BadgeDocs';
 
 @Component
 class App {
@@ -14,6 +14,7 @@ class App {
 
     componentWillMount() {
         this.myChildren['Alert'] = <AlertDocs />;
+        this.myChildren['Badge'] = <BadgeDocs />
     }
 
     addAllChildComponents() {
