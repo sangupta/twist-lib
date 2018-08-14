@@ -1,5 +1,6 @@
 import { Component, BaseComponent, Attribute } from "@twist/react";
 import React from 'react';
+import If from 'helper/If';
 
 @Component
 export class Props extends BaseComponent {
@@ -26,12 +27,12 @@ export class Props extends BaseComponent {
         console.log(this.label);
 
         return <div class='props-container'>
-            <if condition={ this.isNotEmpty(this.label) }>
+            <If condition={ this.isNotEmpty(this.label) }>
                 <h3>Available Properties for { this.label }</h3>   
-            </if>
-            <else>
+            </If>
+            <If condition={ !this.isNotEmpty(this.label) }>
                 <h3>Available Properties</h3>
-            </else>
+            </If>
 
             <table class='table table-striped table-bordered table-hover'>
                 <thead>

@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Component, BaseComponent } from "@twist/react";
 import { Observable} from "@twist/core";
+import Aux from 'helper/Aux';
 
 import AlertDocs from './pages/AlertDocs';
 import BadgeDocs from './pages/BadgeDocs';
@@ -19,7 +20,6 @@ import NavListDocs from './pages/NavListDocs';
 import PaginationDocs from './pages/PaginationDocs';
 import ImageDocs from './pages/ImageDocs';
 
-const Aux = props => props.children;
 
 @Component
 export default class DocSiteMain extends BaseComponent {
