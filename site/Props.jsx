@@ -26,17 +26,17 @@ export class Props {
 @Component
 export class Prop {
 
-    @Attribute name;
+    @Attribute name:string = '';
 
-    @Attribute type;
+    @Attribute type:string = '';
 
-    @Attribute initial;
+    @Attribute initial:string = '';
 
-    @Attribute required;
+    @Attribute required:boolean = false;
 
-    @Attribute description;
+    @Attribute description:string = '';
 
-    @Attribute values;
+    @Attribute values:string = '';
 
     render() {
         return <tr>
@@ -47,7 +47,7 @@ export class Prop {
             <td>
                 { this.description }
                 <if condition={ this.values }>
-                    Valid values are: { this.values }
+                    { 'Valid values are: ' + this.values }
                 </if>
             </td>
         </tr>

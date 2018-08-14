@@ -9,10 +9,10 @@ import React from 'react';
 @Component
 export default class ButtonToolbar extends BaseComponent {
 
-  @Attribute ariaLabel;
+  @Attribute role:string = 'toolbar';
 
   render() {
-    return <div class="btn-toolbar" role="toolbar" aria-label={ this.ariaLabel }>
+    return <div class="btn-toolbar" role={ this.role } { ...this.undeclaredAttributes() }>
       { this.children }
     </div>;
   }

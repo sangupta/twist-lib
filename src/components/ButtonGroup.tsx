@@ -9,14 +9,14 @@ import React from 'react';
 @Component
 export default class ButtonGroup extends BaseComponent {
 
-  @Attribute ariaLabel:string = '';
-  
+  @Attribute role:string = 'group';
+
   @Attribute size:string = '';
 
   @Attribute vertical:boolean = false;
   
   render() {
-    return <div class={ 'btn-group btn-group-' + this.size } class-btn-group-vertical={ this.vertical } role='group' aria-label={ this.ariaLabel }>
+    return <div class={ 'btn-group btn-group-' + this.size } class-btn-group-vertical={ this.vertical } role={ this.role } { ...this.undeclaredAttributes() }>
       { this.children }
     </div>;
   }

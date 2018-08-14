@@ -9,7 +9,7 @@ import React from 'react';
 @Component
 export default class Button extends BaseComponent {
 
-  @Attribute variant:string = '';
+  @Attribute variant:string = 'primary';
   
   @Attribute outline:boolean = false;
 

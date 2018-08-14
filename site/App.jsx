@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 
 import AlertDocs from './pages/AlertDocs';
 import BadgeDocs from './pages/BadgeDocs';
+import ButtonDocs from './pages/ButtonDocs';
+import ButtonGroupDocs from './pages/ButtonGroupDocs';
+import ButtonToolbarDocs from './pages/ButtonToolbarDocs';
 
 @Component
 class App {
@@ -14,7 +17,10 @@ class App {
 
     componentWillMount() {
         this.myChildren['Alert'] = <AlertDocs />;
-        this.myChildren['Badge'] = <BadgeDocs />
+        this.myChildren['Badge'] = <BadgeDocs />;
+        this.myChildren['Button'] = <ButtonDocs />;
+        this.myChildren['Button Group'] = <ButtonGroupDocs />;
+        this.myChildren['Button Toolbar'] = <ButtonToolbarDocs />;
     }
 
     addAllChildComponents() {
