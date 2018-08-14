@@ -12,6 +12,7 @@ import LinkButtonDocs from './pages/LinkButtonDocs';
 import ProgressBarDocs from './pages/ProgressBarDocs';
 import BreadcrumbDocs from './pages/BreadcrumbDocs';
 import ListGroupDocs from './pages/ListGroupDocs';
+import NavDocs from './pages/NavDocs';
 
 @Component
 class App {
@@ -32,6 +33,7 @@ class App {
         this.myChildren['Jumbotron'] = <JumbotronDocs />;
         this.myChildren['Link Button'] = <LinkButtonDocs />;
         this.myChildren['List Group'] = <ListGroupDocs />;
+        this.myChildren['Nav'] = <NavDocs />;
         this.myChildren['Progress Bar'] = <ProgressBarDocs />;
     }
 
