@@ -1,10 +1,9 @@
 import { Component, BaseComponent, Attribute } from "@twist/react";
-import Aux from "helper/Aux";
 
 @Component
 export class ListGroup extends BaseComponent {
 
-    @Attribute flush:boolean = 'false';
+    @Attribute flush:boolean = false;
 
     render() {
         return <ul class="list-group" class-list-group-flush={ this.flush} { ...this.undeclaredAttributes() }>
