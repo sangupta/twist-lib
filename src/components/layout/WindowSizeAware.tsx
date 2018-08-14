@@ -1,5 +1,6 @@
 import { Component, BaseComponent, Attribute, Bind } from '@twist/react';
 import React from 'react';
+import Aux from 'helper/Aux';
 
 /**
  * This component tracks the window size and set the scope
@@ -41,7 +42,7 @@ export default class WindowSizeAware extends BaseComponent {
     }
     
     render() {
-        return <g> { this.children } </g>;
+        return <Aux> { this.children } </Aux>;
     }
 
 }

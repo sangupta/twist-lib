@@ -2,12 +2,13 @@ import Button from 'components/Button';
 import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
 import React from 'react';
+import Aux from 'helper/Aux';
 
 @Component
 export default class ButtonDocs extends BaseComponent {
 
     render() {
-        return <g>
+        return <Aux>
             <h3>Button</h3>
 
             <Props>
@@ -19,7 +20,7 @@ export default class ButtonDocs extends BaseComponent {
                 <Prop name="disabled" type="boolean" initial="false" description="Apply disabled state to the button." />
                 <Prop name="type" type="string" initial="button" description="The value to use for 'type' attribute." />
             </Props>
-        </g>;
+        </Aux>;
     }
 
 }

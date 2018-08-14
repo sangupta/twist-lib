@@ -1,12 +1,13 @@
 import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
 import React from 'react';
+import Aux from "helper/Aux";
 
 @Component
 export default class PaginationDocs extends BaseComponent {
 
     render() {
-        return <g>
+        return <Aux>
             <Props label='Pagination'>
                 <Prop name="size" />
             </Props>
@@ -15,6 +16,6 @@ export default class PaginationDocs extends BaseComponent {
                 <Prop name="active" />
                 <Prop name="disabled" />
             </Props>
-        </g>;
+        </Aux>;
     }
 }

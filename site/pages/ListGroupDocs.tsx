@@ -1,12 +1,13 @@
 import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
 import React from 'react';
+import Aux from "helper/Aux";
 
 @Component
 export default class ListGroupDocs extends BaseComponent {
 
     render() {
-        return <g>
+        return <Aux>
             <Props label='ListGroup'>
                 <Prop name='flush' type='boolean' required='false' description='Remove some borders and rounded corners to render list-group items edge-to-edge in parent container (e.g. cards).' />
             </Props>
@@ -30,7 +31,7 @@ export default class ListGroupDocs extends BaseComponent {
                 <Prop name='type' type='string' required='false' initial='button' description="Value of the 'type' attribute" />
             </Props>
 
-        </g>;
+        </Aux>;
     }
 
 }

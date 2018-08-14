@@ -1,4 +1,5 @@
 import { Component, BaseComponent, Attribute } from "@twist/react";
+import Aux from "helper/Aux";
 
 @Component
 export class ListGroup extends BaseComponent {
@@ -23,9 +24,8 @@ export class ListGroupItem extends BaseComponent {
     @Attribute disabled:boolean = false;
 
     render() {
-        return <g>
-            <li class={ 'list-group-item list-group-item-' + this.variant } class-active={ this.active }  class-disabled={ this.disabled } { ...this.undeclaredAttributes() }>{ this.children }</li>
-        </g>;
+        return <li class={ 'list-group-item list-group-item-' + this.variant } class-active={ this.active }  
+                    class-disabled={ this.disabled } { ...this.undeclaredAttributes() }>{ this.children }</li>;
     }
 }
 
@@ -39,9 +39,8 @@ export class ListGroupLink extends BaseComponent {
     @Attribute disabled:boolean = false;
 
     render() {
-        return <g>
-            <a class={ 'list-group-item list-group-item-action list-group-item-' + this.variant } class-active={ this.active }  class-disabled={ this.disabled } { ...this.undeclaredAttributes() }>{ this.children }</a>
-        </g>;
+        return <a class={ 'list-group-item list-group-item-action list-group-item-' + this.variant } class-active={ this.active }  
+                    class-disabled={ this.disabled } { ...this.undeclaredAttributes() }>{ this.children }</a>;
     }
 }
 
@@ -57,8 +56,7 @@ export class ListGroupButton extends BaseComponent {
     @Attribute disabled:boolean = false;
 
     render() {
-        return <g>
-            <button type='button' class={ 'list-group-item list-group-item-action list-group-item-' + this.variant } class-active={ this.active }  class-disabled={ this.disabled } { ...this.undeclaredAttributes() }>{ this.children }</button>
-        </g>;
+        return <button type='button' class={ 'list-group-item list-group-item-action list-group-item-' + this.variant } class-active={ this.active }  
+                    class-disabled={ this.disabled } { ...this.undeclaredAttributes() }>{ this.children }</button>;
     }
 }

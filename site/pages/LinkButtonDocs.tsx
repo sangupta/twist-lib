@@ -1,12 +1,13 @@
 import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
 import React from 'react';
+import Aux from "helper/Aux";
 
 @Component
 export default class LinkButtonDocs extends BaseComponent {
 
     render() {
-        return <g>
+        return <Aux>
             <Props>
                 <Prop name="variant" type="enum" values="primary, secondary, success, danger, warning, info" initial="primary" />
                 <Prop name="outline" type="boolean" initial="false" description="Show button as an outline." />
@@ -16,6 +17,6 @@ export default class LinkButtonDocs extends BaseComponent {
                 <Prop name="disabled" type="boolean" initial="false" description="Apply disabled state to the button." />
                 <Prop name="type" type="string" initial="button" description="The value to use for 'type' attribute." />
             </Props>
-        </g>;
+        </Aux>;
     }
 }

@@ -1,12 +1,13 @@
 import { Component, BaseComponent, Attribute } from "@twist/react";
 import { Props, Prop } from '../Props';
 import React from 'react';
+import Aux from "helper/Aux";
 
 @Component
 export default class BreadcrumbDocs extends BaseComponent {
 
     render() {
-        return <g>
+        return <Aux>
             <Props label='Breadcrumb'>
                 <Prop name='ariaLabel' />
             </Props>
@@ -21,7 +22,7 @@ export default class BreadcrumbDocs extends BaseComponent {
                 <Prop name='title' />
                 <Prop name='target' />
             </Props>
-        </g>;
+        </Aux>;
     }
 
 }
