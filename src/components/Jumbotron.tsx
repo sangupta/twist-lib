@@ -12,7 +12,7 @@ export default class Jumbotron extends BaseComponent {
     @Attribute fluid:boolean = false;
 
     render() {
-        return <div class='jumbotron' class-jumbotron-fluid={ this.fluid }>
+        return <div class='jumbotron' class-jumbotron-fluid={ this.fluid } { ...this.undeclaredAttributes() }>
             { this.children }
         </div>;
     }

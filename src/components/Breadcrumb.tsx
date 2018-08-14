@@ -19,7 +19,7 @@ export class BreadcrumbItem extends BaseComponent {
     @Attribute active:boolean = false;
 
     render() {
-        return <li class='breadcrumb-item' class-active={ this.active }>
+        return <li class='breadcrumb-item' class-active={ this.active } { ...this.undeclaredAttributes() }>
             { this.children }
         </li>;
     }

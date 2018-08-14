@@ -22,6 +22,8 @@ export default class LinkButton extends BaseComponent {
   @Attribute active:boolean = false;
 
   @Attribute disabled:boolean = false;
+
+  @Attribute role:string = 'button';
   
   @Attribute tabIndex;
   
@@ -42,7 +44,7 @@ export default class LinkButton extends BaseComponent {
     
     return <a class={ classes } class-btn-block={ this.block } 
               class-disabled={ this.disabled } class-active={ this.active } 
-              href={ this.href } tabindex={ this.tabIndex } role='button'>
+              href={ this.href } tabindex={ this.tabIndex } role={ this.role } { ...this.undeclaredAttributes() }>
       { this.children }
     </a>;
   }

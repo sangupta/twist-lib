@@ -54,7 +54,7 @@ export default class Button extends BaseComponent {
       disabledString = 'disabled';
     }
     
-    return <button type={ this.type } class={ classes } { ...disabledString }>
+    return <button type={ this.type } class={ classes } { ...disabledString } { ...this.undeclaredAttributes() }>
       { this.children }
     </button>;
   }

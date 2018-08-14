@@ -12,7 +12,7 @@ export default class Alert extends BaseComponent {
   @Attribute variant:string = 'primary';
   
   render() {
-    return <div class={ 'alert alert-' + this.variant}>
+    return <div class={ 'alert alert-' + this.variant} { ...this.undeclaredAttributes() }>
       { this.children }
     </div>;
   }
