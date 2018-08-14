@@ -82,7 +82,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({ title: 'Twist-Lib Component Library', template: 'site/index.ejs', inject: 'body' }),
-    new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),}),
+    new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify('production'),}),
     new webpack.ProvidePlugin({"React": "react",}),
     new ReactTwistPlugin(),
     new webpack.HotModuleReplacementPlugin()
