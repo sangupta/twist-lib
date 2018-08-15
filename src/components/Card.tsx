@@ -32,3 +32,27 @@ export class CardBody extends BaseComponent {
         </div>;
     }
 }
+
+@Component
+export class CardTitle extends BaseComponent {
+
+    render() {
+        return <h5 class="card-title" { ...this.undeclaredAttributes() }>{ this.children }</h5>;
+    }
+}
+
+@Component
+export class CardSubTitle extends BaseComponent {
+
+    render() {
+        return <h6 class="card-subtitle" { ...this.undeclaredAttributes() }>{ this.children }</h6>
+    }
+}
+
+@Component
+export class CardText extends BaseComponent {
+
+    render() {
+        return <p class="card-text" { ...this.undeclaredAttributes() }>{ this.children }</p>;
+    }
+}
